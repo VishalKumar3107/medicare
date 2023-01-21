@@ -98,13 +98,13 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 {
-    font-size: 80px;
+    font-size: 60px;
     color: #f0ff19;
 }
 
 .header-text h1 span {
     color: #77caf3;
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .intro-text {
