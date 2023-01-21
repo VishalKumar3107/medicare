@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookAnAppointment</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../AboutUs/index.html">About us</a></li>
+                    <li><a href="../Services/index.html">Services</a></li>
+                    <li><a href="#appointment">Book An Appointment</a></li>
+                    <li><a href="../ProvidersNearMe/index.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="toggle-btn" onclick="myFunction();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <center>
+            <h1>Book Your Appointment</h1>
+        </center>
+        <p>Booking an appointment with a healthcare provider can be a daunting task for many people. Not only is it
+            time-consuming, but it can also be stressful, especially if you are dealing with a serious illness or
+            injury. At "Medicare", we understand the importance of making the appointment booking process as seamless
+            and stress-free as possible. That's why we have developed an online appointment booking system that allows
+            our patients to schedule their appointments quickly and easily.<br>
+
+            The online appointment booking system at "Medicare" is designed to be user-friendly and intuitive. To book
+            an appointment, patients simply need to visit our website, select the "Book an Appointment" option, and fill
+            out a brief form with their personal and contact information. Once the form is submitted, patients will be
+            directed to a calendar where they can select their preferred appointment date and time.<br>
+
+            One of the key benefits of our online appointment booking system is that it is available 24 hours a day,
+            seven days a week. This means that patients can book appointments at a time that is convenient for them,
+            whether it is early in the morning, late at night, or over the weekend. This is especially beneficial for
+            patients who have busy schedules or who are dealing with a medical emergency.<br>
+
+            Our online appointment booking system also allows patients to choose the type of appointment they need. We
+            offer a wide range of medical services, including outdoor checkup, medicine and pharmacy, blood testing, and
+            free ambulance services, and patients can choose the type of appointment they need. This ensures that
+            patients receive the appropriate level of care and helps us to provide the best possible service to our
+            patients.<br>
+
+            At "Medicare", we understand that some patients may prefer to book appointments over the phone or in person.
+            That's why we also offer traditional appointment booking methods, such as phone and walk-in appointments.
+            Our friendly and helpful staff are always available to assist patients with booking appointments, and we are
+            committed to providing the best possible service to our patients.<br>
+
+            In conclusion, booking an appointment with a healthcare provider can be a daunting task, but it doesn't have
+            to be. At "Medicare", we have developed an online appointment booking system that is designed to be
+            user-friendly and intuitive, making it easy for patients to schedule their appointments quickly and easily.
+            Our system is available 24 hours a day, seven days a week, and allows patients to view and manage their
+            upcoming appointments. We also offer traditional appointment booking methods, such as phone and walk-in
+            appointments, to ensure that all our patients receive the best possible service. If you have any questions
+            about our services or need to schedule an appointment, please do not hesitate to contact us. We look forward
+        </p>
+        <center>
+            <h1>Choose Your Subscription</h1>
+        </center>
+        <div class="container-box">
+            <div class="box">
+                <h2>Basic</h2>
+                <p>₹999/month</p>
+                <ul>
+                    <li>Access to all basic features</li>
+                    <li>Limited customer support</li>
+                </ul>
+                <button>Subscribe</button>
+            </div>
+            <div class="box">
+                <h2>Premium</h2>
+                <p>₹1999/month</p>
+                <ul>
+                    <li>Access to all basic and premium features</li>
+                    <li>Unlimited customer support</li>
+                </ul>
+                <button>Subscribe</button>
+            </div>
+            <div class="box">
+                <h2>Ultimate</h2>
+                <p>₹2999/month</p>
+                <ul>
+                    <li>Access to all basic, premium & ultimate features</li>
+                    <li>Unlimited customer support & Priority service</li>
+                </ul>
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+
+        <div class="appointment-form">
+            <h2>Book Your Appointment</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br>
+                <label for="appointment-date">Appointment Date:</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+                <br>
+                <label for="appointment-time">Appointment Time:</label>
+                <input type="time" id="appointment-time" name="appointment-time" required>
+                <br>
+                <input type="submit" value="Book Appointment">
+            </form>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="copyright">
+            <p>
+                Copyright © Vishal Kumar.Made with <i class="fa-solid fa-heart"></i> by vishal.
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function myFunction() {
+            var navbar = document.getElementById('nav');
+            navbar.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

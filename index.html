@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5cac1b893e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#serv">Services</a></li>
+                    <li><a href="./BookAnAppointment/index.html">Book An Appointment</a></li>
+                    <li><a href="./ProvidersNearMe/index.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="toggle-btn" onclick="myFunction();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    </div>
+
+    <div id="services">
+        
+            <div class="header-text" style="margin-right: 50px;">
+                <h1>Welcome to<span> Medicare</span></h1>
+            </div>
+            <div class="intro-text">Empowering seniors with quality healthcare
+                Making Medicare simple and accessible.<br>
+                Your health, our priority.</div>
+                <div class="container">
+            <!-- <img src="./images/header.png" style="width: 100%; height: auto; margin-top: 50px;"> -->
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-user-plus"></i>
+                    <h2>Login or Create<br>an account</h2>
+                    <p>Access your inormation anytime, anywhere.</p>
+                    <a href="./Login/index.html" class="butn">Log in / Sign Up</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-binoculars"></i>
+                    <h2>Find care providers</h2>
+                    <p>Compare hospitals, nursing & more.</p>
+                    <a href="./ProvidersNearMe/index.html" class="butn">Find Providers near Me</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-headset"></i>
+                    <h2>Talk to someone</h2>
+                    <p>Contact Medicare & other helpul resources.</p>
+                    <a href="./ProvidersNearMe/index.html" class="butn">Get Help</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container" style="color: #000000;">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png">
+                </div>
+                <div class="about-col-2">
+                    <h5 class="sub-title" style="color: #000000;"><b>About Us</b></h5>
+                    <hr>
+                    <h1>Best Medical Care For You And Your Family</h1>
+                    <p>Medical care has several important functions other than restoring or maintaining health. These
+                        other functions are assessment and certification of health status, prognostication, segregation
+                        of the ill to limit communication of illness, and helping to cope with the problems of
+                        illness the caring function. Medical care serving these "paracurative" functions may
+                        legitimately be given indepedently, without associated curing or preventive intent of the
+                        provider.<a href="./AboutUs/index.html" class="butn" style="color: black; font-size: small; width: fit-content;">Learn More...</a>
+                    </p>
+                    <div class="container text-center" >
+                        <div class="row2" >
+                            <div class="col" style="color: #000000;"><i class="fa-solid fa-user-doctor" ></i><br>
+                                Qualified Doctors
+                            </div>
+                            <div class="col" style="color: #000000;"><i class="fa-solid fa-kit-medical"></i><br>
+                                Emergency Services
+                            </div>
+                            <div class="col" style="color: #000000;"><i class="fa-solid fa-truck-medical"></i><br>
+                                Free Ambulance
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="serv">
+        <div class="container">
+            <center>
+                <h3 class="sub-title" style="color: #000000;"><b>We Provide</b></h3>
+            </center>
+
+            <div class="flex-container">
+                <div class="flex-box"><i class="fa-solid fa-syringe"></i><br>
+                    <h4>Operations & Surgery</h4>
+                    <p>Operations and surgeries are medical procedures that involve the use of instruments to repair or
+                        remove part of the body. They can be performed. </p>
+                </div>
+                <div class="flex-box"><i class="fa-solid fa-stethoscope"></i><br>
+                    <h4>Outdoor Checkup</h4>
+                    <p> An outdoor checkup, also known as a house call, is a medical appointment where a doctor visits a patient at their home</p>
+                </div>
+                <div class="flex-box"><i class="fa-solid fa-pills"></i><br>
+                    <h4>Medicine & Pharmacy</h4>
+                    <p> Medicine is the science and practice of the diagnosis, treatment, and prevention of disease. It includes a wide range of healthcare practices.</p>
+                </div>
+                <div class="flex-box"><i class="fa-solid fa-droplet"></i><br>
+                    <h4>Blood Testing</h4>
+                    <p>Blood testing involves taking a sample of a patient's blood and analyzing it in a laboratory to check for various health conditions</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <center>
+                <h1 style="color: #000000;">Excellent Medical Services</h>
+                    <hr>
+            </center>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work1.png" alt="service">
+                    <div class="layer">
+                        <h3>Operation & Surgery</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti aspernatur
+                            magnam sequi similique tenetur!</p>
+                        <a href="./Services/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work2.png" alt="Services2">
+                    <div class="layer">
+                        <h3>Outdoor Checkup</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti aspernatur
+                            magnam sequi similique tenetur!</p>
+                        <a href="./Services/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work3.png" alt="services3">
+                    <div class="layer">
+                        <h3>Medicine & Pharmacy</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti aspernatur
+                            magnam sequi similique tenetur!</p>
+                        <a href="./Services/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work4.png" alt="service">
+                    <div class="layer">
+                        <h3>Blood Testing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti aspernatur
+                            magnam sequi similique tenetur!</p>
+                        <a href="./Services/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work5.png" alt="Services2">
+                    <div class="layer">
+                        <h3>Emergency Care</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti aspernatur
+                            magnam sequi similique tenetur!</p>
+                        <a href="./Services/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work6.png" alt="services3">
+                    <div class="layer">
+                        <h3>Free Ambulance</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deleniti aspernatur
+                            magnam sequi similique tenetur!</p>
+                        <a href="./Services/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a href="./Services/index.html" class="bttn" style="background-color: #FFC93C; color: black;">See more</a>
+    </div>
+
+
+    <div id="appointment">
+        <div class="container">
+            <div class="row2">
+                <div class="about-col-3">
+                    <div class="content">
+                        <h1  style="color: #ffc93c;">APPOINTMENT</h1>
+                        <h2  style="color: #ffc93c;">Make An Appointment For Your Family</h2>
+                        <p style="color: #ffffff;">You can enroll in Medicare during your initial enrollment period, which begins three months
+                            before you turn 65 and ends three months after your 65th birthday.There are four parts to
+                            Medicare: <br>
+                            Part A (hospital insurance),<br>
+                            Part B (medical insurance),<br>
+                            Part C (Medicare Advantage plans), and<br>
+                            Part D (prescription drug coverage).</p>
+                        <div class="button">
+                            <a href="./BookAnAppointment/"><button type="button" class="btn btn-primary btn-sm" style="background-color: #FFC93C; color: black;">Find Doctor</button></a>
+                            <a href="./BookAnAppointment/"><button type="button" class="btn btn-secondary btn-sm" style="background-color: #FFC93C; color: black;">Read More</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-col-4">
+                    <h2>Get Daily NewsLetter</h2>
+                    <center>
+                        <form class="form-style-9">
+                            <ul>
+                                <li><input type="email" name="field2" class="field-style" placeholder="Email" /></li>
+                                <li><input type="submit" value="Subscribe" /></li>
+                            </ul>
+                        </form>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="testimony">
+        <div class="testimonials text-center">
+
+            <div class="container">
+                <h3 style="font-weight: 600;">Why People Trust Us</h3>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-light bg-light text-center">
+                            <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                            <div class="card-body blockquote">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                    bibendum enim eu nibh finibus</p>
+                                <footer class="blockquote-footer"><cite title="Source Title">Mohamed Nady</cite>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-light bg-light text-center">
+                            <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                            <div class="card-body blockquote">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                    bibendum enim eu nibh finibus</p>
+                                <footer class="blockquote-footer"><cite title="Source Title">Mohamed Reda</cite>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card border-light bg-light text-center">
+                            <i class="fa fa-quote-left fa-3x card-img-top rounded-circle" aria-hidden="true"></i>
+                            <div class="card-body blockquote">
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                    bibendum enim eu nibh finibus</p>
+                                <footer class="blockquote-footer"><cite title="Source Title">Mohamed Atef</cite>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact us</h1>
+                    <p><i class="fa-solid fa-envelope"></i>vishalkumar@info.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>918474721188</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn-btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright © Vishal Kumar.Made with <i class="fa-solid fa-heart"></i> by vishal.
+            </p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function myFunction() {
+            var navbar = document.getElementById('nav');
+            navbar.classList.toggle('show');
+        }
+    </script>
+
+</body>
+
+</html>

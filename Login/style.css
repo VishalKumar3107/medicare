@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#040021, #77caf3, #1c315e);
+    color: #33aa80;
+}
+
+#header {
+    display: inline-block;
+    width: 100%;
+    padding: 25px 20px;
+    position: relative;
+    background-color: linear-gradient(#040021, #090a2b);
+}
+
+.container {
+    padding: 10px 10px;
+}
+
+nav {
+    float: right;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+.logo {
+    width: 60px;
+    float: left;
+    margin-top: 16px;
+}
+
+.logo img {
+    height: 70px;
+    margin-left: 40px;
+    margin-top: -18px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    color: #48b2d8;
+}
+
+nav ul li a {
+    color: #F6F6F6;
+    position: relative;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.toggle-btn {
+    width: 35px;
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    display: none;
+}
+
+.toggle-btn span {
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #f0ff19;
+    float: left;
+    margin-bottom: 8px;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #F2DF3A;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+.main-content {
+    flex: 1;
+}
+
+.main-content h1 {
+    margin: 50px;
+    font-size: 35px;
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.image-container {
+    width: 40%;
+    margin-right: 20px;
+    padding: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.center-text{
+    display: none;
+}
+.image-container img {
+    width: 50%;
+    height: 300px; 
+    width: 300px;
+    margin-bottom: 40px;
+    margin-right: 50px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.image-container img:nth-child(2n) {
+    margin-bottom: 0;
+}
+
+.login-signup-container {
+    width: 20%;
+    color: white;
+    background-color: #3C79F5;
+    border: 2px solid #026164;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px #023a3b;
+    padding: 20px;
+}
+
+
+.form-container {
+    width: 50%;
+    width: 400px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab-item {
+    padding: 10px 20px;
+    border: 1px solid #023a3b;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.tab-item.active {
+    border-bottom: 3px solid #333;
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+    height: 300px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    height: 50px;
+    color: #F2DF3A;
+    background: linear-gradient(#1e3461, #0d172c);
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright i {
+    color: rgb(201, 34, 34);
+}
+
+.copyright p {
+    font-size: 0.9em;
+    text-align: right;
+}
+@media(max-width: 1108px) {
+    .toggle-btn {
+        display: block;
+        margin-top: -20px;
+    }
+
+    .logo img {
+        height: 60px;
+        margin-block-start: 0%;
+        margin-top: -40px;
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        border-top: 1px solid #000;
+        padding-top: 20px;
+        margin-top: 30px;
+    }
+
+    nav ul li {
+        padding: 15px 0px;
+        width: 100%;
+    }
+
+    nav.show {
+        display: block;
+    }
+}
+@media(max-width: 1308px) {
+    .image-container {
+        display: none;
+    }
+    .login-signup-container {
+        width: 40%;
+    }
+}
+@media(max-width: 880px) {
+    .image-container {
+        display: none;
+    }
+    .login-signup-container {
+        width: 45%;
+    }
+}
+@media(max-width: 680px) {
+    .image-container {
+        display: none;
+    }
+    .login-signup-container {
+        width: 55%;
+    }
+}
+@media(max-width: 450px) {
+    .image-container {
+        display: none;
+    }
+    .login-signup-container {
+        width: 85%;
+    }
+}

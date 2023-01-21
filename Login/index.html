@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/logo.png">
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../AboutUs/index.html">About us</a></li>
+                    <li><a href="../Services/index.html">Services</a></li>
+                    <li><a href="../BookAnAppointment/index.html">Book An Appointment</a></li>
+                    <li><a href="../ProvidersNearMe/index.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="toggle-btn" onclick="myFunction();">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="center-container">
+            <div class="image-container">
+                <img src="../images/login1.jpg" alt="website image 1">
+                <img src="../images/login2.jpg" alt="website image 2">
+                <img src="../images/login3.jpg" alt="website image 3">
+                <img src="../images/login4.jpg" alt="website image 4">
+            </div>
+            <div class="center-text">
+                <p>Welcome to our Medicare website! Please login to access your account or sign up to create a new one.
+                    With your account, you can easily manage your Medicare benefits and view your claims information.
+                    Thanks for visiting!</p>
+            </div>
+            <div class="login-signup-container">
+                <div class="tab-container">
+                    <div class="tab-item active" id="login-tab">Login</div>
+                    <div class="tab-item" id="signup-tab">Sign Up</div>
+                </div>
+                <form id="login-form">
+                    <input type="text" placeholder="Username or Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit">Log In</button>
+                </form>
+                <form id="signup-form" style="display: none;">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="copyright">
+            <p>
+                Copyright © Vishal Kumar.Made with <i class="fa-solid fa-heart"></i> by vishal.
+            </p>
+        </div>
+    </div>
+    <script>
+        const loginTab = document.getElementById('login-tab');
+        const signupTab = document.getElementById('signup-tab');
+        const loginForm = document.getElementById('login-form');
+        const signupForm = document.getElementById('signup-form');
+
+        loginTab.addEventListener('click', () => {
+            loginTab.classList.add('active');
+            signupTab.classList.remove('active');
+            loginForm.style.display = "block";
+            signupForm.style.display = "none";
+        });
+
+        signupTab.addEventListener('click', () => {
+            signupTab.classList.add('active');
+            loginTab.classList.remove('active');
+            signupForm.style.display = "block";
+            loginForm.style.display = "none";
+        });
+
+        signupForm.style.display = "none";
+
+
+        function myFunction() {
+            var navbar = document.getElementById('nav');
+            navbar.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>
